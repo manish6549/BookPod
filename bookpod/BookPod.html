@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BookPod.</title>
+        <script src="https://kit.fontawesome.com/13bdd33470.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="css/BookPodExtra.css">
+        <link rel="stylesheet" type="text/css" href="css/bookpod.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+        <script>
+            $(function(){
+                $(".searchIcon").click(function(){
+                  $(".searchBox").toggleClass("active");
+                  $(".searchContainer-1").toggleClass("active");
+                })
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+                <a class="logo" href="#BookPod">BookPod<span style="color: #000080">.</span> </a>
+            <div class="header-middle">
+                <a href="#Home">Home</a>
+                <a href="#Categories">Categories</a>
+                <a href="#Podcast">Podcasts</a>
+            </div>
+            <div class="sidebar">
+                <div class="header-middle w3-sidebar w3-bar-block w3-border-right" id="mySidebar">
+                    <button onclick="w3_close()" class="w3-bar-item w3-large">☰</button>
+                    <div class="menu">
+                        <a href="#Home">Home</a>
+                        <a href="#Categories">Categories</a>
+                        <a href="#Podcast">Podcasts</a>
+                    </div>    
+                </div>
+            </div>      
+                <button class="w3-button w3-teal w3-xlarge" id="button-w3" onclick="w3_open()">☰</button>
+                <a class="logo-1" href="#BookPod">BookPod<span style="color: #000080">.</span> </a>  
+                <div class="searchContainer-1">
+                    <i class="fa fa-search searchIcon" aria-hidden="true"></i>
+                    <input class="searchBox" type="search" name="search" placeholder="Search...">
+                </div> 
+            <div class="searchContainer">
+                <i class="fa fa-search searchIcon" aria-hidden="true"></i>
+                <input class="searchBox" type="search" name="search" placeholder="Search...">
+            </div>                       
+        </div>
+        <div class="para-major">
+            <h1 class="para-big">Home of<span id="num1">100,000+</span>books and podcasts</h1>
+        </div>
+        <div class="para-minor">
+            <p class="para-small">Get the latest books and listen to the latest podcasts in all in one place</p>
+        </div>
+        <div class="btn-primary">
+            <button type="button" class="btn-secondary">Get Started</button>
+        </div>
+        <div class="middle-para">
+            <div class="big-image"></div>
+            <div class="text-para">
+                <h3 class="lore">LOREM IPSUM</h3>
+                <p class="lore-m">Lorem Ipsum</p>
+                <p class="lore-m">dolor sit amet</p>
+                <p class="lore-n">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>   
+            <div class="fonts-fa">
+                <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+            </div>  
+        </div>       
+        <div class="footer">
+            <h2 class="footer-head">Featured Writers</h2>
+            <div class="row">
+                <div class="column">
+                    <img class="resize-pic" src="img/e-r-braithwaite.png"><p class="text">E R Braithwaite</p>
+                </div>
+                <div class="column">
+                    <img class="resize-pic" src="img/Andrea-Levy.png"><p class="text">Andrea Levy</p>
+                </div>
+                <div class="column">
+                    <img class="resize-pic" src="img/Stephen-King.png"><p class="text">Stephen King</p>
+                </div>
+                <div class="column">
+                    <img class="resize-pic" src="img/Jorge-Amado.png"><p class="text">Jorge Amado</p>
+                </div>
+                <div class="column">
+                    <img class="resize-pic" src="img/Gayle-Forman.png"><p class="text">Gayle Forman</p>
+                </div>
+                <div class="column">
+                    <img class="resize-pic" src="img/Shashi-Tharoor.png"><p class="text">Shashi Tharoor</p>
+                </div>
+                <div class="column">
+                    <img class="resize-pic" src="img/J. K. Rowling.png"><p class="text">J. K. Rowling</p>
+                </div>
+                <div class="column">
+                    <img class="resize-pic" src="img/John Green.png"><p class="text">John Green</p>
+                </div> 
+            </div>
+        </div>  
+        
+        <script>
+            function w3_open() {
+              document.getElementById("mySidebar").style.display = "block";
+            }
+            
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
+    </body>
+</html>
